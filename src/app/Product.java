@@ -1,9 +1,9 @@
 package app;
 
 public class Product {
-    String name;
-    int quota;
-    double price;
+    private String name;
+     private int quota;
+    private double price;
 
     public Product(String name, int quota, double price) {
         this.name = name;
