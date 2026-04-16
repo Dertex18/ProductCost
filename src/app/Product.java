@@ -25,10 +25,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product: " + name +
-                ", quota is " + quota + " " +
-                Constants.MEASURE +
-                ", price is " + Constants.CURRENCY +
-                " " + price + ".";
+        return String.format("Product %s, quota is %d %s, price is %s %.2f.", name, quota, Constants.MEASURE,
+                Constants.CURRENCY, price );
     }
 }
+
