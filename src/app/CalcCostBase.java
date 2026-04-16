@@ -1,11 +1,8 @@
 package app;
 
-// Клас розрахунку базової вартості товару
-// ЗАВДАННЯ: Виправити код класу.
-public class CalcCostBase {
 
-    // Базовий розрахунок вартості товару
+public class CalcCostBase {
     public double calcCost(Product product) {
-        return .getQuota() * product.;
+        return product.getQuota() * product.getPrice();
     }
 }
