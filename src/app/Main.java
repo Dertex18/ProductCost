@@ -15,15 +15,15 @@ public class Main {
         CalcCostDelivery costDelivery = new CalcCostDelivery();
         double deliveryCost = costDelivery.calcCost(product);
 
-        String baseOutput =  String.format("\n %s Cost is %s %.2f.", product,  Constants.CURRENCY, baseCost);
-        String deliveryOutput =  String.format("\n %s Cost is %s %.2f.", product,  Constants.CURRENCY, deliveryCost);
+        String baseOutput = String.format("\n %s Cost is %s %.2f.", product, Constants.CURRENCY, baseCost);
+        String deliveryOutput = String.format("\n %s Cost is %s %.2f.", product, Constants.CURRENCY, deliveryCost);
 
         getOutput(baseOutput);
         getOutput(deliveryOutput);
     }
 
     public static String[] getData() {
-        return new String[] {"abc", "5", "2.5"};
+        return new String[]{"abc", "5", "2.5"};
     }
 
     public static void getOutput(String output) {

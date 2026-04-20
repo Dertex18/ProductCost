@@ -2,7 +2,7 @@ package app;
 
 public class Product {
     private String name;
-     private int quota;
+    private int quota;
     private double price;
 
     public Product(String name, int quota, double price) {
@@ -25,8 +25,21 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("Product %s, quota is %d %s, price is %s %.2f.", name, quota, Constants.MEASURE,
-                Constants.CURRENCY, price );
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Product ")
+                .append(name)
+                .append(", quota is ")
+                .append(quota)
+                .append(" ")
+                .append(Constants.MEASURE)
+                .append(", price is ")
+                .append(Constants.CURRENCY)
+                .append(" ")
+                .append(String.format("%.2f", price))
+                .append(".");
+
+        return sb.toString();
     }
 }
 
